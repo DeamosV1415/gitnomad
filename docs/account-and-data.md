@@ -59,5 +59,5 @@ stay exactly as they are. Account deletion **cannot be undone**.
 
 ## Questions
 
-Privacy questions or requests: **_[support@gitnomad.dev]_**, or see the
+Privacy questions or requests: **gitnomad.app@gmail.com**, or see the
 [Privacy Policy](../legal/privacy.md).

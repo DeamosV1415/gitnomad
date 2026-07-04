@@ -92,7 +92,7 @@ Having trouble or want to go deeper? The docs cover everything:
 - 🐛 **Found a bug?** [Open an issue](https://github.com/DeamosV1415/gitnomad/issues/new/choose).
 - 💡 **Have an idea?** [Start a discussion](https://github.com/DeamosV1415/gitnomad/discussions)
   or open a feature request.
-- 📧 **Something private?** Email **_[support@gitnomad.dev]_**.
+- 📧 **Something private?** Email **gitnomad.app@gmail.com**.
 
 Please check [Troubleshooting](docs/troubleshooting.md) and existing issues first —
 your problem may already have an answer.

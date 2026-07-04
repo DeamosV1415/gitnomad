@@ -43,4 +43,4 @@ little patience and good faith go a long way.
 ## Security issues
 
 Please **don't** file security vulnerabilities as public issues. Email them
-privately to **_[security@gitnomad.dev]_** so they can be fixed before disclosure.
+privately to **gitnomad.app@gmail.com** so they can be fixed before disclosure.

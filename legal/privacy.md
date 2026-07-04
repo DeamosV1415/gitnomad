@@ -5,7 +5,7 @@ title: "GitNomad — Privacy Policy"
 
 # GitNomad — Privacy Policy
 
-**Effective date:** _[set on publish, e.g. 2026-07-04]_
+**Effective date:** 2026-07-04
 
 > This is a plain-language starting template that describes how GitNomad
 > actually works today. It is **not legal advice** — review it (and adapt the
@@ -18,8 +18,8 @@ collect, why, and the control you have over it.
 
 ## Who we are
 
-GitNomad is operated by _[your name / entity]_. Contact us about privacy at
-**_[your contact email — e.g. privacy@gitnomad.dev]_**.
+GitNomad is operated by an independent developer. Contact us about privacy at
+**gitnomad.app@gmail.com**.
 
 ## What we collect
 
@@ -89,4 +89,4 @@ material changes, surface a notice in the app.
 
 ## Contact
 
-Questions or requests: **_[your contact email]_**.
+Questions or requests: **gitnomad.app@gmail.com**.

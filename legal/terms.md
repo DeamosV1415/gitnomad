@@ -5,7 +5,7 @@ title: "GitNomad — Terms of Service"
 
 # GitNomad — Terms of Service
 
-**Effective date:** _[set on publish, e.g. 2026-07-04]_
+**Effective date:** 2026-07-04
 
 > This is a plain-language starting template. It is **not legal advice** — review
 > and adapt it (jurisdiction, liability limits, entity name) before publishing it
@@ -74,4 +74,4 @@ means you accept the updated terms.
 
 ## Contact
 
-Questions: **_[your contact email]_**.
+Questions: **gitnomad.app@gmail.com**.
