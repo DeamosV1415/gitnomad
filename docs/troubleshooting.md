@@ -92,6 +92,35 @@ you've already linked, see [My repos aren't showing up](#my-repos-arent-showing-
 - If it stays pending with the computer clearly online, reload the VS Code window
   to restart the extension.
 
+### It's stuck on "N pending" and says "action on desktop"
+
+This happens when **both** sides changed the **same file** and your computer has
+**unsaved-to-git (uncommitted) changes** to it. Git won't let your phone's version
+overwrite work you haven't committed, so your phone's edits wait — and the repo
+shows an **"action on desktop"** badge. On the phone's file list you'll see a
+banner naming the file(s), like:
+
+> *Your desktop has uncommitted changes to `index.html`. Commit or discard them on
+> your desktop to finish syncing.*
+
+**On your computer**, do one of these for the named file(s):
+
+- **Keep both sides (recommended):** commit your computer's change, then let sync
+  continue — you'll get a **"Changes to review"** card on the phone to merge the two
+  versions.
+  ```sh
+  git add -A
+  git commit -m "my desktop edits"
+  ```
+- **Keep the phone's version:** discard your computer's uncommitted change so the
+  phone's edit applies cleanly.
+  ```sh
+  git checkout -- index.html      # or: git restore index.html
+  ```
+
+Within a few seconds the badge clears and your phone's changes land. (You can do
+this from the VS Code Source Control panel too — commit or discard the file.)
+
 ### My computer's changes aren't on the phone
 
 - Save the file in VS Code — unsaved-but-saved-to-disk changes appear as
