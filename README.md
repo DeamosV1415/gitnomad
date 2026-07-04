@@ -7,7 +7,7 @@
 Open your real desktop project on your phone, edit it, sync every change back to
 your computer, and run it — wherever you are.
 
-[**Documentation**](docs/README.md) · [**Report a bug**](https://github.com/DeamosV1415/gitnomad/issues/new/choose) · [**Discussions**](https://github.com/DeamosV1415/gitnomad/discussions) · [**Privacy**](legal/privacy.md) · [**Terms**](legal/terms.md)
+[**Documentation**](docs/index.md) · [**Report a bug**](https://github.com/DeamosV1415/gitnomad/issues/new/choose) · [**Discussions**](https://github.com/DeamosV1415/gitnomad/discussions) · [**Privacy**](legal/privacy.md) · [**Terms**](legal/terms.md)
 
 </div>
 

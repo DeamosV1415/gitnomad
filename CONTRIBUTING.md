@@ -31,7 +31,7 @@ The clearer the report, the faster the fix.
 ## Improving the docs
 
 Spotted a typo, an outdated step, or something confusing in the
-[documentation](docs/README.md)? Docs live in this public repo, so
+[documentation](docs/index.md)? Docs live in this public repo, so
 **pull requests are welcome** for the `docs/` and `legal/` markdown files. For
 anything larger, open an issue first so we can agree on the direction.
 

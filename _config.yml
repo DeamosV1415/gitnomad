@@ -1,0 +1,27 @@
+# GitHub Pages (Jekyll) config — renders the markdown docs + legal pages as
+# styled HTML on the site, using _layouts/default.html for every page.
+title: GitNomad
+description: The mobile editor that syncs your real project to your desktop.
+
+# Project site lives at https://<user>.github.io/gitnomad — so the base path is
+# "/gitnomad". If you later attach a custom apex domain (e.g. gitnomad.dev at the
+# root), change baseurl to "" (empty).
+baseurl: "/gitnomad"
+
+# Clean URLs: legal/privacy.md -> /legal/privacy/ , docs/faq.md -> /docs/faq/
+permalink: pretty
+
+# Wrap every page in the branded layout without needing front matter per file.
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default
+
+# These stay in the repo for GitHub browsing but aren't built as site pages
+# (the landing is index.html; issue templates live under .github, which Jekyll
+# ignores automatically).
+exclude:
+  - README.md
+  - CONTRIBUTING.md
+  - CHANGELOG.md
