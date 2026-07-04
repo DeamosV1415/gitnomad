@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Linking your desktop"
+---
+
 # Linking your desktop
 
 Your phone and your computer need to know they belong to the same account. This

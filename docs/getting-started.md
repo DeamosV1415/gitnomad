@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Getting started"
+---
+
 # Getting started
 
 This guide takes you from zero to your first synced edit. It takes about five

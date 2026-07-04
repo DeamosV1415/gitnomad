@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Troubleshooting"
+---
+
 # Troubleshooting
 
 Most GitNomad problems come down to one of three things:

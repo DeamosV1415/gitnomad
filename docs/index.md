@@ -1,3 +1,8 @@
+---
+layout: default
+title: "GitNomad Documentation"
+---
+
 # GitNomad Documentation
 
 Welcome! These guides explain how to set up and use GitNomad, and how to fix

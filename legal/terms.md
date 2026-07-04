@@ -1,3 +1,8 @@
+---
+layout: default
+title: "GitNomad — Terms of Service"
+---
+
 # GitNomad — Terms of Service
 
 **Effective date:** _[set on publish, e.g. 2026-07-04]_

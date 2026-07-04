@@ -1,3 +1,8 @@
+---
+layout: default
+title: "GitNomad — Privacy Policy"
+---
+
 # GitNomad — Privacy Policy
 
 **Effective date:** _[set on publish, e.g. 2026-07-04]_

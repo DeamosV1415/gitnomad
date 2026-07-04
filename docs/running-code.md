@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Running code"
+---
+
 # Running code
 
 GitNomad can run a command on your computer and stream the output back to your

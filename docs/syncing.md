@@ -1,3 +1,8 @@
+---
+layout: default
+title: "How syncing works"
+---
+
 # How syncing works
 
 GitNomad keeps your phone and your computer in step through a small cloud **sync

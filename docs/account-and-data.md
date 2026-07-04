@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Account & your data"
+---
+
 # Account & your data
 
 This page summarizes what GitNomad stores and how you stay in control. For the

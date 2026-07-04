@@ -1,3 +1,8 @@
+---
+layout: default
+title: "Reviewing merges"
+---
+
 # Reviewing merges
 
 Sometimes you and your computer change the **same lines** of the same file before

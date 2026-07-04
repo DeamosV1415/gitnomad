@@ -1,3 +1,8 @@
+---
+layout: default
+title: "FAQ"
+---
+
 # FAQ
 
 ### Is GitNomad free?

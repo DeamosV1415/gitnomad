@@ -8,9 +8,6 @@ description: The mobile editor that syncs your real project to your desktop.
 # root), change baseurl to "" (empty).
 baseurl: "/gitnomad"
 
-# Clean URLs: legal/privacy.md -> /legal/privacy/ , docs/faq.md -> /docs/faq/
-permalink: pretty
-
 # Wrap every page in the branded layout without needing front matter per file.
 defaults:
   - scope:
