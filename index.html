@@ -199,9 +199,12 @@
   .scene{ position:absolute; inset:0; display:flex; flex-direction:column; opacity:0; transition:opacity .8s var(--ease); }
   .scene.active{ opacity:1; }
   .app-logo{ width:17px; height:17px; border-radius:5px; }
-  .scene-dots{ display:flex; gap:7px; margin-top:22px; justify-content:center; }
-  .scene-dots i{ width:6px; height:6px; border-radius:50%; background: rgba(244,239,228,.22); transition: background .35s var(--ease), width .35s var(--ease); }
-  .scene-dots i.on{ background: var(--beacon); width:17px; border-radius:3px; box-shadow:0 0 10px rgba(242,169,80,.6); }
+  .seg-toggle{ position:relative; display:flex; margin-top:24px; padding:4px; background: rgba(255,255,255,.045); border:1px solid var(--line); border-radius:12px; backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px); }
+  .seg-ind{ position:absolute; top:4px; bottom:4px; left:4px; width: calc((100% - 8px)/3); border-radius:9px; background: linear-gradient(180deg, var(--beacon-2), var(--beacon)); box-shadow: 0 5px 16px -5px rgba(242,169,80,.65), inset 0 1px 0 rgba(255,255,255,.35); transition: transform .4s var(--ease); }
+  .seg{ position:relative; z-index:1; flex:1; border:none; background:none; cursor:pointer; font-family: var(--mono); font-size:11.5px; font-weight:600; letter-spacing:.03em; color: var(--muted); padding:8px 6px; border-radius:9px; transition: color .3s var(--ease); }
+  .seg:hover{ color: var(--canvas); }
+  .seg.on{ color: var(--ink); }
+  .seg:focus-visible{ outline:2px solid var(--beacon); outline-offset:3px; }
 
   /* repos scene */
   .rl-head{ padding: 4px 18px 12px; }
@@ -483,7 +486,12 @@
 
           </div>
         </div>
-        <div class="scene-dots"><i class="on"></i><i></i><i></i></div>
+        <div class="seg-toggle" role="tablist" aria-label="Preview screen">
+          <span class="seg-ind" aria-hidden="true"></span>
+          <button class="seg on" type="button" data-i="0" role="tab" aria-selected="true">Repos</button>
+          <button class="seg" type="button" data-i="1" role="tab" aria-selected="false">Editor</button>
+          <button class="seg" type="button" data-i="2" role="tab" aria-selected="false">History</button>
+        </div>
       </div>
     </div>
   </header>
@@ -845,19 +853,27 @@
   // ---- phone scene tour: repos -> live editor -> history, cross-fading ----
   (function scenes() {
     var els = Array.prototype.slice.call(document.querySelectorAll('.scene'));
-    var dots = Array.prototype.slice.call(document.querySelectorAll('.scene-dots i'));
+    var segs = Array.prototype.slice.call(document.querySelectorAll('.seg'));
+    var ind = document.querySelector('.seg-ind');
     if (!els.length) return;
     var dur = { repos: 4800, editor: 7200, history: 5200 };
+    var timer = null;
     function show(i) {
+      clearTimeout(timer);
       for (var k = 0; k < els.length; k++) {
         els[k].classList.toggle('active', k === i);
-        if (dots[k]) dots[k].classList.toggle('on', k === i);
+        if (segs[k]) { segs[k].classList.toggle('on', k === i); segs[k].setAttribute('aria-selected', k === i ? 'true' : 'false'); }
       }
+      if (ind) ind.style.transform = 'translateX(' + (i * 100) + '%)';
       var name = els[i].getAttribute('data-scene');
       if (name === 'editor') startEditor();
-      if (!reduce) setTimeout(function () { show((i + 1) % els.length); }, dur[name] || 5000);
+      if (!reduce) timer = setTimeout(function () { show((i + 1) % els.length); }, dur[name] || 5000);
     }
-    if (reduce) { // no rotation — show the most representative scene
+    // manual control: click a segment to jump; the tour then resumes from there
+    segs.forEach(function (s) {
+      s.addEventListener('click', function () { show(parseInt(s.getAttribute('data-i'), 10) || 0); });
+    });
+    if (reduce) { // no auto-rotation — show the most representative scene
       var ei = 0;
       for (var k = 0; k < els.length; k++) if (els[k].getAttribute('data-scene') === 'editor') ei = k;
       show(ei);
