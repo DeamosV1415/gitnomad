@@ -30,10 +30,10 @@ on the couch, in a queue — and want to act on them without opening a laptop.
 
 ## Get GitNomad
 
-| Where | What | Link |
-|-------|------|------|
-| 📱 **Android app** | The mobile editor | [Google Play](https://play.google.com/store/apps/details?id=dev.gitnomad.app) *(live at launch)* |
-| 🖥️ **VS Code extension** | Connects your desktop | [Marketplace](https://marketplace.visualstudio.com/items?itemName=gitnomad.gitnomad-desktop) *(live at launch)* |
+| Where                    | What                  | Link                                                                                                            |
+| ------------------------ | --------------------- | --------------------------------------------------------------------------------------------------------------- |
+| 📱 **Android app**       | The mobile editor     | [Google Play](https://play.google.com/store/apps/details?id=dev.gitnomad.app) _(live at launch)_                |
+| 🖥️ **VS Code extension** | Connects your desktop | [Marketplace](https://marketplace.visualstudio.com/items?itemName=gitnomad.gitnomad-desktop) _(live at launch)_ |
 
 ## Features
 
@@ -48,6 +48,24 @@ on the couch, in a queue — and want to act on them without opening a laptop.
   shows a simple green/red review instead of raw git conflict markers.
 - **Your code stays yours** — your local git repository on your computer is always
   the source of truth. Nothing is published to GitHub unless you ask.
+
+## The desktop extension
+
+The [VS Code extension](https://marketplace.visualstudio.com/items?itemName=gitnomad.gitnomad-desktop) is what connects your computer to your phone — it exposes the repos you choose, keeps them in sync, and runs the commands you launch from the app.
+
+<div align="center">
+
+<img src="docs/img/desktop-sidebar.png" alt="GitNomad panel in VS Code showing synced repos" width="300" />
+
+<br/><br/>
+
+<img src="docs/img/desktop-shell-picker.png" alt="Choosing the shell for phone-run commands" width="620" />
+
+<br/><br/>
+
+<img src="docs/img/desktop-log.png" alt="GitNomad sync activity log" width="700" />
+
+</div>
 
 ## How it works (in 30 seconds)
 
