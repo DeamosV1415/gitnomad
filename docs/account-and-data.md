@@ -51,6 +51,8 @@ This permanently:
 Your code **on your own computer is never affected** — your local git repositories
 stay exactly as they are. Account deletion **cannot be undone**.
 
+Can't open the app? You can also [request account & data deletion by email](../legal/delete-account.md).
+
 ## Data retention
 
 - Shared repos stay on the sync service until you remove them (or the computer
