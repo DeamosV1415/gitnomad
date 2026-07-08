@@ -35,12 +35,20 @@ computer is always the source of truth. See the
 ### What platforms are supported?
 
 The app is **Android** today; iOS is planned. The desktop side is a **VS Code**
-extension, which also works in VS Code–compatible editors.
+extension ([Marketplace](https://marketplace.visualstudio.com/items?itemName=gitnomad.gitnomad-desktop)),
+which also works in VS Code–compatible editors like Antigravity, VSCodium, and
+Cursor via [Open VSX](https://open-vsx.org/extension/gitnomad/gitnomad-desktop).
 
 ### Which languages does the editor highlight?
 
 Many — including Python, JavaScript/TypeScript, JSON, HTML, CSS, Markdown, Rust,
 C/C++, Java, Go, SQL, PHP, YAML, and more. Unknown file types open as plain text.
+
+### Can I run programs that ask for input?
+
+Yes. The phone terminal is interactive — if a command pauses for input (like
+Python's `input()`), type your answer and send it, and it continues. See
+[Running code](running-code.md).
 
 ### Do I need Android Studio or any developer tools on my phone?
 

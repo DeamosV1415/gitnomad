@@ -32,9 +32,11 @@ Every repo you sync is tied to your account, so signing in is required.
 ## Step 2 — Install the VS Code extension
 
 1. On your computer, open VS Code.
-2. Go to the **Extensions** panel and search for **GitNomad Desktop** (or install
+2. Go to the **Extensions** panel and search for **GitNomad Desktop**, or install
    it from the
-   [Marketplace](https://marketplace.visualstudio.com/items?itemName=gitnomad.gitnomad-desktop)).
+   [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=gitnomad.gitnomad-desktop).
+   Using a VS Code–compatible editor (Antigravity, VSCodium, Cursor)? Install from
+   [Open VSX](https://open-vsx.org/extension/gitnomad/gitnomad-desktop) instead.
 3. Once installed, you'll see a **GitNomad icon** in the activity bar (the strip
    of icons on the left). Click it to open the GitNomad panel.
 

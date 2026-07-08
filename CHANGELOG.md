@@ -2,6 +2,30 @@
 
 All notable changes to GitNomad are documented here. Dates use YYYY-MM-DD.
 
+## Terminal update
+
+Improvements to running commands from your phone.
+
+### Added
+
+- **Terminal tabs** — open several terminals per repo, each with its own
+  scrollback and working directory, remembered across restarts.
+- **Working-directory navigation** — `cd` into subfolders (and `clear`); commands
+  run where you are, not only at the repo root.
+- **Interactive input** — answer prompts (like Python's `input()`) by typing in
+  the terminal while a command runs.
+- **Shell picker** — choose which shell runs your commands on the desktop (OS
+  default, PowerShell, pwsh, cmd, or bash), with the active shell shown in the app.
+- **Command history** — recall recent commands from chips above the prompt.
+
+### Fixed
+
+- Commands run in a subfolder no longer hang and can be stopped reliably (desktop
+  extension 0.1.2).
+- Output streams live instead of appearing only when the command finishes.
+
+---
+
 ## [1.0.0] — first release
 
 The first public release of GitNomad.

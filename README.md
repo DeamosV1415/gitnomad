@@ -32,8 +32,10 @@ on the couch, in a queue — and want to act on them without opening a laptop.
 
 | Where                    | What                  | Link                                                                                                            |
 | ------------------------ | --------------------- | --------------------------------------------------------------------------------------------------------------- |
-| 📱 **Android app**       | The mobile editor     | [Google Play](https://play.google.com/store/apps/details?id=dev.gitnomad.app) _(live at launch)_                |
-| 🖥️ **VS Code extension** | Connects your desktop | [Marketplace](https://marketplace.visualstudio.com/items?itemName=gitnomad.gitnomad-desktop) _(live at launch)_ |
+| 📱 **Android app**       | The mobile editor     | [Google Play](https://play.google.com/store/apps/details?id=dev.gitnomad.app) _(in closed testing — public launch very soon)_ |
+| 🖥️ **VS Code extension** | Connects your desktop | [VS Marketplace](https://marketplace.visualstudio.com/items?itemName=gitnomad.gitnomad-desktop) · [Open VSX](https://open-vsx.org/extension/gitnomad/gitnomad-desktop) |
+
+> ⏳ **The Android app is currently in closed testing** and will be publicly available on Google Play very soon.
 
 ## Features
 
@@ -51,7 +53,7 @@ on the couch, in a queue — and want to act on them without opening a laptop.
 
 ## The desktop extension
 
-The [VS Code extension](https://marketplace.visualstudio.com/items?itemName=gitnomad.gitnomad-desktop) is what connects your computer to your phone — it exposes the repos you choose, keeps them in sync, and runs the commands you launch from the app.
+The VS Code extension ([VS Marketplace](https://marketplace.visualstudio.com/items?itemName=gitnomad.gitnomad-desktop) · [Open VSX](https://open-vsx.org/extension/gitnomad/gitnomad-desktop) for Antigravity / VSCodium / Cursor) is what connects your computer to your phone — it exposes the repos you choose, keeps them in sync, and runs the commands you launch from the app.
 
 <div align="center">
 

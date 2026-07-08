@@ -157,18 +157,33 @@ See [Reviewing merges](merge-review.md) for how the review works.
 
 - Running uses your computer — it must be **on**, with VS Code open and the
   extension **linked and running**. Check the repo isn't **desktop offline**.
-- Make sure you typed a command and tapped **Run**.
+- Make sure you typed a command and sent it.
 
 ### The command runs but errors
 
 - The error is from **your command on your machine**, exactly as if you'd typed it
-  in a terminal there. Check the command, the working directory (it runs in the
-  repo root), and that any tools it needs are installed on your computer.
+  in a terminal there. Check the command, the terminal's **working directory**
+  (shown in the prompt — use `cd` to change it), and that any tools it needs are
+  installed on your computer.
+
+### A command in a subfolder hangs, or Stop won't end it
+
+- Update the **desktop extension to 0.1.2 or newer**. Older versions had a bug
+  where a command run in a subfolder (after `cd`) never started and couldn't be
+  stopped. Check the version on the extension's Marketplace / Open VSX page, or
+  reinstall the latest.
+
+### My program is waiting for input
+
+- Some commands pause to read input (like Python's `input()`). The terminal stays
+  ready — type your answer and send it, and the command continues. You can send
+  more than one line.
 
 ### A command seems stuck
 
-- Tap **Stop**. If your computer went offline mid-run, the run pauses until it's
-  back; stop it and try again once you're connected.
+- If it's waiting for input, see above. Otherwise tap **Stop** to end it. If your
+  computer went offline mid-run, the run pauses until it's back; stop it and try
+  again once you're connected.
 
 ---
 
